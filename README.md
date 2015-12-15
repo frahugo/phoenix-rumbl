@@ -17,3 +17,11 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: http://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## For the developer
+
+[Install](https://zen.id.au/how-to-make-the-elixir-shell-iex-save-history/) erlang-history package.
+
+To watch files and automatically run tests:
+
+    mix test.watch
