@@ -81,4 +81,6 @@ form.link, form.button {
 
 #msg-container {
   min-height: 190px;
+  max-height: 190px;
+  overflow-y: auto;
 }

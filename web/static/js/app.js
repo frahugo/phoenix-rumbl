@@ -19,9 +19,8 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 import Player from "./player"
-let video = document.getElementById("video");
+import Video from "./video"
 
-if (video) {
-  Player.init(video.id, video.getAttribute("data-player-id"))
-}
-// import socket from "./socket"
+Video.init(socket, document.getElementById("video"))
+
+import socket from "./socket"

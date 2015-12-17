@@ -1,5 +1,6 @@
 let Player = {
   player: null,
+  initialized: false,
 
   init(domId, playerId) {
     window.onYouTubeIframeAPIReady = () => this.onIframeReady(domId, playerId)
@@ -20,12 +21,11 @@ let Player = {
     })
   },
 
-  onPlayerReady(event) { },
+  onPlayerReady(event) { this.initialized = true },
 
   onPlayerStateChange(event) { },
 
   getCurrentTime() { return Math.floor(this.player.getCurrentTime() * 1000) },
   seekTo(millsec) { return this.player.seekTo(millsec / 1000) }
 }
-
 export default Player

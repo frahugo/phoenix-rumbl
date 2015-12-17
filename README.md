@@ -25,3 +25,9 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
 To watch files and automatically run tests:
 
     mix test.watch
+
+## To-do when done reading the book
+
+* Migrate to Phoenix 1.1
+* See what to do with `messagesToRender` & `messageQueue`.  Seems to be missing some code in the book.
+* Write tests for the channel
