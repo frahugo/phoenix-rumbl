@@ -42,9 +42,14 @@ let Video = {
     vidChannel.join()
       .receive("ok", resp => {
         console.log("joined the video channel", resp)
+        this.clearContent(msgContainer)
         this.scheduleMessages(msgContainer, resp.annotations)
       })
       .receive("error", resp => console.log("join failed", reason))
+  },
+
+  clearContent(msgContainer) {
+    msgContainer.innerHTML = ""
   },
 
   renderAnnotation(msgContainer, {user, body, at}) {

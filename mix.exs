@@ -37,7 +37,8 @@ defmodule Rumbl.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:cowboy, "~> 1.0"},
      {:comeonin, "~> 1.2"},
-     {:mix_test_watch, "~> 0.2", only: :dev}]
+     {:mix_test_watch, "~> 0.2", only: :dev},
+     {:sweet_xml, "~> 0.5.0"}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
